@@ -1,11 +1,46 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: gray;
 }
 
-main .fondo {
-  width: 100dvw;
+body {
+  background-color: gray;
+  overflow-x: hidden;
+}
+
+main .h4-carousel {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  position: absolute;
+  top: 15dvh;
+  left: 30%;
+  width: 40%;
+  z-index: 50;
+}
+main .whatsapp-logo {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: 5rem;
+  z-index: 100;
+}
+main h2 {
+  text-align: center;
+}
+main iframe {
+  height: 70dvw;
+  width: 70dvw;
+  margin: 0 15dvw;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
