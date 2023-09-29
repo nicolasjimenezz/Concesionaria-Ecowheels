@@ -39,18 +39,19 @@
         </nav>
     </header>
     <main>
+      <!-- CAROUSEL INICIO -->
         <div>
           <h4 class="h4-carousel">Sumate a la revolución</h4>
           <div id="carouselExampleAutoplaying" class="carousel slide carousel-personal" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./assets/images/carousel1.webp" class="d-block w-100" alt="Familia dentro de un auto">
+                  <img src="./assets/images/carousel-start/carousel1.webp" class="d-block w-100" alt="Familia dentro de un auto">
                 </div>
                 <div class="carousel-item">
-                  <img src="./assets/images/carousel2.webp" class="d-block w-100" alt="Cargando la bateria de un auto">
+                  <img src="./assets/images/carousel-start/carousel2.webp" class="d-block w-100" alt="Cargando la bateria de un auto">
                 </div>
                 <div class="carousel-item">
-                  <img src="./assets/images/carousel3.webp" class="d-block w-100" alt="Cargando la bateria de un auto">
+                  <img src="./assets/images/carousel-start/carousel3.webp" class="d-block w-100" alt="Cargando la bateria de un auto">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -63,18 +64,135 @@
               </button>
           </div>
         </div>
-        <a href="https://whatsapp.com/" target=_blank><img class="whatsapp-logo" src="./assets/ws1.1.png" alt="Logo de whatsapp"></a>
-        <h2 id="significado">¿Qué es un híbrido?</h2>
-        <p>Son vehículos con 2 motores, uno de combustión interna y otro eléctrico, esto le permite alternar su fuente de energía y moverse con menor consumo y contaminación ambiental.</p>
-        <h2 id="vehiculos">Vehículos</h2>
-        <p>Disponemos de varios modelos para elegir según sus necesidades y gustos</p>
-        <h3>Autos</h3>
-        <h3>SUVs</h3>
-        <h3>Pick Ups</h3>
-        <h4>Ofrecemos Test Drives, rellene nuestro <a href="#contacto">FORMULARIO DE CONTACTO</a> para solicitar uno</h4>
-        <div>
-            <h4>Trabajamos con los siguientes fabricantes</h4>
-            <div>logos, chevro, toyota, nissan, etc</div>
+        <a href="https://whatsapp.com/" target=_blank><img class="whatsapp-logo" src="./assets/social-media/ws.png" alt="Logo de whatsapp"></a>
+        <!-- ¿Qué es un vehículo híbrido? -->
+        <div class="significado">
+          <h2 id="significado">¿Qué es un híbrido?</h2>
+          <p>Son vehículos con 2 motores, uno de combustión interna y otro eléctrico, esto le permite alternar su fuente de energía y moverse con menor consumo y contaminación ambiental.</p>
+          <img src="./assets/images/significado/auto-hibrido.webp">
+        </div>
+        <!-- CATALOGO -->
+        <div class="catalogo">
+          <h2 id="vehiculos">Vehículos</h2>
+          <p>Disponemos de varios modelos para elegir según sus necesidades y gustos</p>
+          <div class="catalogo-vehiculos">
+
+            <div class="caja-interna">
+              <h3>Autos</h3>
+              <div id="carouselExampleCaptions" class="carousel slide carousel-vehiculo">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/catalogue/cars/2021_bmw_5-series-815x543.webp" class="d-block w-100" alt="BMW 5 series 2021">
+                    <div class="carousel-caption d-md-block"> <!-- elimine "d-none"-->
+                      <h5>BMW 5 series 2021</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/catalogue/cars/2023_toyota_prius-prime-815x543.webp" class="d-block w-100" alt="Toyota Prius Prime 2023">
+                    <div class="carousel-caption d-md-block"> <!-- elimine "d-none"-->
+                      <h5>Toyota Prius 2023</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/catalogue/cars/2023_volvo_s90-815x543.webp" class="d-block w-100" alt="Volvo s90 2023">
+                    <div class="carousel-caption d-md-block"> <!-- elimine "d-none"-->
+                      <h5>Volvo s90 2023</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="caja-interna">
+              <h3>SUVs</h3>
+              <div id="carouselExampleCaptions2" class="carousel slide carousel-vehiculo">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/catalogue/suvs/2020_honda_cr-v-hybrid1280x855.webp" class="d-block w-100" alt="Honda CR-V 2020">
+                    <div class="carousel-caption d-md-block"> <!-- elimine "d-none"-->
+                      <h5>Honda CR-V 2020</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/catalogue/suvs/2021_ford_escape_1280x855.webp" class="d-block w-100" alt="Ford Escape 2021">
+                    <div class="carousel-caption d-md-block"> <!-- elimine "d-none"-->
+                      <h5>Ford Escape 2021</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/catalogue/suvs/2021_toyota_venza1280x855.webp" class="d-block w-100" alt="Toyota Venza 2021">
+                    <div class="carousel-caption d-md-block"> <!-- elimine "d-none"-->
+                      <h5>Toyota Venza 2021</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="caja-interna">
+              <h3>Pick Ups</h3>
+              <div id="carouselExampleCaptions3" class="carousel slide carousel-vehiculo">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/catalogue/trucks/toyota-tundra-hybrid-2024-815x543.webp" class="d-block w-100" alt="Toyota Tundra 2024">
+                    <div class="carousel-caption d-md-block"> <!-- elimine "d-none"-->
+                      <h5>Toyota Tundra 2024</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/catalogue/trucks/Ford-Maverick_Hybrid-815x543.webp" class="d-block w-100" alt="Ford Maverick 2022">
+                    <div class="carousel-caption d-md-block"> <!-- elimine "d-none"-->
+                      <h5>Ford Maverick 2022</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <h4>Ofrecemos Test Drives, rellene nuestro <a href="#contacto">FORMULARIO DE CONTACTO</a> para solicitar uno</h4>
+          <div>
+              <h4>Trabajamos con los siguientes fabricantes</h4>
+              <div>logos, chevro, toyota, nissan, etc</div>
+          </div>
         </div>
         <div id="contacto">
             <h2>Contacto</h2>

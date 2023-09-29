@@ -1,3 +1,7 @@
-
+@media only screen and (min-width: 1280px) {
+  .catalogo-vehiculos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /*# sourceMappingURL=queries.css.map */
