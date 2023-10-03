@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoWheels</title>
+    <link rel="shortcut icon" href="./assets/images/favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+        <nav class="navbar navbar-expand-lg" id="navbar"> <!--Borré clase "bg-body-tertiary" para quitarle el color-->
             <div class="container-fluid">
-              <a class="navbar-brand">@EcoWheels</a>
+              <!-- <a class="navbar-brand">@EcoWheels</a> -->
+              <img src="assets/images/EcoWheels-logo.png" class="logo">
               <!-- <h4>Aquí pensamos en el futuro</h4> -->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title offcanvas-title-personal" id="offcanvasNavbarLabel">Enlaces</h5>
+                <div class="offcanvas-header offcanvas-header-personal">
+                  <h5 class="offcanvas-title offcanvas-title-personal" id="offcanvasNavbarLabel">Enlaces internos</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <div class="offcanvas-body offcanvas-body-personal">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 navbar-nav-personal"> <!--Eliminé clase "pe-3"-->
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#significado">¿Qué es un híbrido?</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#vehiculos">Vehículos</a>
+                      <a class="nav-link active" href="#vehiculos">Vehículos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#contacto">Contacto</a>
+                      <a class="nav-link active" href="#contacto">Contacto</a>
                     </li>
                   </ul>
                 </div>
@@ -68,12 +70,12 @@
         <!-- ¿Qué es un vehículo híbrido? -->
         <div class="significado">
           <h2 id="significado">¿Qué es un híbrido?</h2>
-          <p>Son vehículos con 2 motores, uno de combustión interna y otro eléctrico, esto le permite alternar su fuente de energía y moverse con menor consumo y contaminación ambiental.</p>
+          <p>Es un vehículo con 2 motores, uno de combustión interna y otro eléctrico, esto le permite alternar su fuente de energía y moverse con menos cantidades de energía y un impacto ambiental reducido comparado a sus antepasados.</p>
           <img src="./assets/images/significado/auto-hibrido.webp">
         </div>
         <!-- CATALOGO -->
-        <div class="catalogo">
-          <h2 id="vehiculos">Vehículos</h2>
+        <div id="vehiculos" class="catalogo">
+          <h2>Vehículos</h2>
           <p>Disponemos de varios modelos para elegir según sus necesidades y gustos</p>
           <div class="catalogo-vehiculos">
 
@@ -114,7 +116,17 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <h4>Ver modelo</h4>
+
+              <!-- VER MODELO/PROXIMAMENTE CHECKBOX -->
+              <label class="ver-modelo-checkbox">
+                <input type="hidden" name="ver-modelo" value="False">
+                <input class="ver-modelo-checkbox-input" name="ver-modelo" value="True" type="checkbox">
+                <h4 class="ver-modelo-checkbox-texto">
+                  <span class="prendido">Ver modelo</span>
+                  <span class="apagado">Proximamente</span>
+                </h4>
+              </label>
+              <!-- FIN VER MODELO/PROXIMAMENTE CHECKBOX -->
             </div>
 
             <div class="caja-interna">
@@ -154,7 +166,17 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <h4>Ver modelo</h4>
+
+              <!-- VER MODELO/PROXIMAMENTE CHECKBOX -->
+              <label class="ver-modelo-checkbox">
+                <input type="hidden" name="ver-modelo" value="False">
+                <input class="ver-modelo-checkbox-input" name="ver-modelo" value="True" type="checkbox">
+                <h4 class="ver-modelo-checkbox-texto">
+                  <span class="prendido">Ver modelo</span>
+                  <span class="apagado">Proximamente</span>
+                </h4>
+              </label>
+              <!-- FIN VER MODELO/PROXIMAMENTE CHECKBOX -->
             </div>
 
             <div class="caja-interna">
@@ -187,23 +209,37 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <h4>Ver modelo</h4>
+
+              <!-- VER MODELO/PROXIMAMENTE CHECKBOX -->
+              <label class="ver-modelo-checkbox">
+                <input type="hidden" name="ver-modelo" value="False">
+                <input class="ver-modelo-checkbox-input" name="ver-modelo" value="True" type="checkbox">
+                <h4 class="ver-modelo-checkbox-texto">
+                  <span class="prendido">Ver modelo</span>
+                  <span class="apagado">Proximamente</span>
+                </h4>
+              </label>
+              <!-- FIN VER MODELO/PROXIMAMENTE CHECKBOX -->
             </div>
           </div>
 
-          <h4>Ofrecemos Test Drives, rellene nuestro <a href="#contacto">FORMULARIO DE CONTACTO</a> para solicitar uno</h4>
+          <h4 class="link-formulario">Ofrecemos Test Drives, rellene nuestro <a href="#contacto">#FORMULARIO DE CONTACTO</a> para solicitar uno</h4>
           <div class="fabricantes">
-              <h4>Trabajamos con los siguientes fabricantes</h4>
-              <div>
-                <img src="assets/images/marcas-logos/bmw2.png">
-                <img src="assets/images/marcas-logos/bmw3.png">
-                <img src="assets/images/marcas-logos/honda2.png">
-                <img src="assets/images/marcas-logos/honda3.png">
+            <div class="fabricantes-titulo">
+              <img src="./assets/images/fabricantes/mercosur.png" class="mercosur-logo">
+              <h4>FABRICANTES ASOCIADOS</h4>
+              <img src="./assets/images/fabricantes/bandera.webp" class="bandera">
+            </div>
+            <div class="fabricantes-logos">
+              <!-- <img src="assets/images/marcas-logos/bmw2.png"> -->
+              <img src="assets/images/marcas-logos/bmw3.png">
+              <!-- <img src="assets/images/marcas-logos/honda2.png"> -->
+              <img src="assets/images/marcas-logos/honda3.png">
 
-                <img src="assets/images/marcas-logos/volvo.png">
-                <img src="assets/images/marcas-logos/toyota.png">
-                <img src="assets/images/marcas-logos/ford.png">
-              </div>
+              <img src="assets/images/marcas-logos/volvo.png">
+              <img src="assets/images/marcas-logos/toyota.png">
+              <img src="assets/images/marcas-logos/ford.png">
+            </div>
           </div>
         </div>
 
@@ -249,7 +285,7 @@
     <footer>
         <div>
             <h4>Calle Falsa 123, Springfield</h4>
-            <h2>@EcoWheels</h2>
+            <img src="assets/images/EcoWheels-logo.png" class="logo">
         </div>
         <div>
             <a href="https://facebook.com" target=_blank><img class="social-media fb" src="./assets/social-media/fb.png" alt="Imagen link facebook"></a>

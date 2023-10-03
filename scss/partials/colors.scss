@@ -1,12 +1,23 @@
-$color-fondo:gray;
+$color-background:#ffffff;
+
+/*HEADER*/
+$offcanvas-body-color:#e4e4e3;
+
 $color-fondo-titulo-carousel:rgb(0,0,0,0.4);
 $color-fuente-h4-carousel:#fff;
 
-/* FABRICANTES */
-$color-caja-fabricantes: rgb(61, 186, 228);
+/* CATALOGO */
+$color-catalogo-background:#dfdfdf;
+$color-ver-modelo:#bbb;
+$color-proximamente:#f00;
+$color-fuente-proximamente:#fff;
 
-/* VEHICULOS */
-$color-ver-modelo:#555;
+/* FABRICANTES */
+$color-caja-fabricantes: #000;
+// $color-caja-fabricantes-titulo:rgb(0,52,136); //color viejo
+$color-caja-fabricantes-titulo:rgb(0,85,183);
 
 /* FOOTER */
+$color-footer-background:rgb(106 113 124);
 $color-social-media-borde: #000;
+$color-social-media-background: #fff;
