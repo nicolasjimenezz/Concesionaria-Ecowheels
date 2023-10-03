@@ -1,7 +1,17 @@
-@media only screen and (min-width: 1280px) {
-  .catalogo-vehiculos {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/* Error: Undefined variable.
+ *    ,
+ * 22 |             background: $color-background;
+ *    |                         ^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\partials\queries.scss 22:25  root stylesheet */
 
-/*# sourceMappingURL=queries.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 22 \2502              background: $color-background;\d\a    \2502                          ^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\partials\\queries.scss 22:25  root stylesheet";
+}

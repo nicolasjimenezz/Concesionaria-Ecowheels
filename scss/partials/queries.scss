@@ -1,6 +1,92 @@
-@media only screen and (min-width:1280px) {
-    .catalogo-vehiculos{
-        grid-template-columns: repeat(3,1fr);
-
+@media only screen and (max-width: 300px) {
+    .fabricantes{
+        h4{
+            font-size: 1rem;
+        }
     }
 }
+
+@media only screen and (min-width: 480px) {
+    .h4-carousel{
+        font-size: 1.5rem;
+    }
+}
+
+// @media only screen and (min-width: 600px) {
+
+// }
+
+@media only screen and (min-width:992px) {
+    header{
+        .navbar-nav-personal{
+            background: $color-background;
+            li{
+                border: 0;
+                font-size: 1.5rem;
+                padding: 0 1.5rem;
+            }
+        }
+    }
+    main{
+        .significado{
+            img{
+                width: 50%;
+            }
+        }
+        .catalogo{
+            .catalogo-vehiculos{
+                grid-template-columns: repeat(3,1fr);
+            }
+            .fabricantes{
+                .fabricantes-logos{
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: space-evenly;
+                    img{
+                        width: 80px;
+                    }
+                }
+            }
+        }
+        .contacto{
+            flex-direction: row;
+            margin-bottom: $margin-vertical*3;
+            .formulario{
+                margin: 0 auto;
+                p{
+                    padding: 0 2rem;
+                }
+            }
+            iframe{
+                width: 30dvw;
+                height: 30dvw;
+                margin: auto;
+            }
+        }
+    }
+    // footer{
+    //     .logo{
+    //         width: 20dvw;
+    //     }
+    // }
+}
+
+@media only screen and (min-width:1200px) {
+    .catalogo{
+        .caja-fabricantes{
+            display: flex;
+            justify-content: center;
+            .fabricantes{
+                width: 70%;
+                .fabricantes-logos{
+                    img{
+                        width: 15%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media only screen and (orientation: landscape){} 
+/*WHEN WIDTH IS BIGGER THAN HEIGHT*/
