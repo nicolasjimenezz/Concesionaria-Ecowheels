@@ -14,8 +14,10 @@ $color-fuente-proximamente:#fff;
 
 /* FABRICANTES */
 $color-caja-fabricantes: #000;
-// $color-caja-fabricantes-titulo:rgb(0,52,136); //color viejo
 $color-caja-fabricantes-titulo:rgb(0,85,183);
+
+/* CONTACTO Y FOOTER */
+$box-shadow-dorado: 0 0 0.75rem 0.25rem #fafa8a; /* offset-x | offset-y | blur-radius | spread-radius | color */
 
 /* FOOTER */
 $color-footer-background:rgb(106 113 124);

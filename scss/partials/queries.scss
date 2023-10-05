@@ -24,6 +24,9 @@
                 border: 0;
                 font-size: 1.5rem;
                 padding: 0 1.5rem;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -39,9 +42,6 @@
             }
             .fabricantes{
                 .fabricantes-logos{
-                    // display: flex;
-                    // align-items: center;
-                    // justify-content: space-evenly;
                     img{
                         width: 80px;
                     }
@@ -64,14 +64,19 @@
             }
         }
     }
-    // footer{
-    //     .logo{
-    //         width: 20dvw;
-    //     }
-    // }
 }
 
 @media only screen and (min-width:1200px) {
+    // header{
+    //     nav{
+    //         height: 10dvh;
+    //         .carousel-item{
+    //             video, img{
+    //                 height: 90vh;
+    //             }
+    //         }
+    //     }
+    // }
     .catalogo{
         .caja-fabricantes{
             display: flex;

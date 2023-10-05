@@ -41,18 +41,21 @@
         </nav>
     </header>
     <main>
-      <!-- CAROUSEL INICIO -->
+        <!-- CAROUSEL INICIO -->
         <div>
           <!-- <h4 class="h4-carousel">Traemos el futuro</h4> -->
-          <div id="carouselExampleAutoplaying" class="carousel slide carousel-personal" data-bs-ride="carousel">
+          <div id="carouselExampleAutoplaying" class="carousel slide carousel-personal" data-bs-ride="carousel" data-bs-pause="false" data-bs-touch="false">
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="7200">
+                  <video src="./assets/images/carousel-start/bmw-charging-cut-mute.mp4" class="d-block w-100" alt="BMW híbrido siendo cargado" autoplay muted loop>
+                </div>
+                <div class="carousel-item" data-bs-interval="8800">
                   <img src="./assets/images/carousel-start/carousel1.webp" class="d-block w-100" alt="Familia dentro de un auto">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="8000">
                   <img src="./assets/images/carousel-start/carousel2.webp" class="d-block w-100" alt="Cargando la bateria de un auto">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="8000">
                   <img src="./assets/images/carousel-start/carousel3.webp" class="d-block w-100" alt="Cargando la bateria de un auto">
                 </div>
               </div>
@@ -249,14 +252,14 @@
           <div class="formulario">
             <h2>Contacto</h2>
             <p>Puede contactarnos a través de Whatsapp o rellenando el siguiente formulario</p>
-            <form>
+            <form action="https://formspree.io/f/xwkdwwaq" method="POST">
               <div class="caja-input">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Su nombre">
               </div>
               <div class="caja-input">
                 <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="Su e-mail">
               </div>
               <div class="caja-motivo">
                 <h4>Motivo:</h4>
@@ -274,7 +277,8 @@
                 </div>
               </div>
               <div class="caja-input">
-                <textarea placeholder="Su Mensaje para nosotros"></textarea>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Su mensaje para nosotros"></textarea>
               </div>
               <div class="caja-input-submit">
                 <input type="submit">
@@ -286,14 +290,14 @@
     </main>
     <footer>
         <div>
-            <h4>Calle Falsa 123, Springfield</h4>
-            <img src="assets/images/EcoWheels-logo.png" class="logo">
+          <h4>Calle Falsa 123, Springfield</h4>
+          <img src="assets/images/EcoWheels-logo.png" class="logo">
         </div>
         <div>
-            <a href="https://facebook.com" target=_blank><img class="social-media fb" src="./assets/social-media/fb.png" alt="Imagen link facebook"></a>
-            <a href="https://instagram.com" target=_blank><img class="social-media ig" src="./assets/social-media/ig.png" alt="Imagen link instagram"></a>
-            <a href="https://twitter.com" target=_blank><img class="social-media tw" src="./assets/social-media/tw.png" alt="Imagen link twitter"></a>
-            <a href="https://tiktok.com" target=_blank><img class="social-media tk" src="./assets/social-media/tk.png" alt="Imagen link tiktok"></a>
+          <a href="https://facebook.com" target=_blank><img class="social-media fb" src="./assets/social-media/fb.png" alt="Imagen link facebook"></a>
+          <a href="https://instagram.com" target=_blank><img class="social-media ig" src="./assets/social-media/ig.png" alt="Imagen link instagram"></a>
+          <a href="https://twitter.com" target=_blank><img class="social-media tw" src="./assets/social-media/tw.png" alt="Imagen link twitter"></a>
+          <a href="https://tiktok.com" target=_blank><img class="social-media tk" src="./assets/social-media/tk.png" alt="Imagen link tiktok"></a>
         </div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>

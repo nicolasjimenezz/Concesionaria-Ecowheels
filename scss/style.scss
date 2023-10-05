@@ -10,7 +10,6 @@
 $margin-vertical:0.5rem;
 $width-form: 70%;
 
-
 *{
     font-family: "Helvetica";
     margin: 0;
@@ -55,11 +54,15 @@ main{
         z-index: 50;
     }
     .whatsapp-logo{
+        filter: brightness(0.9);
         position: fixed;
-        right: 1rem;
         bottom: 1rem;
+        right: 1rem;
         width: 5rem;
         z-index: 100;
+        &:hover{
+            filter: brightness(1);
+        }
     }
     h2{
         text-align: center;
@@ -94,6 +97,9 @@ main{
                     background-color: $color-ver-modelo;
                     padding: 0.5rem;
                     margin-top: 0.3rem;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
                 h5{
                     display: inline;
@@ -137,6 +143,9 @@ main{
         font-size: 1rem;
         a{
             text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
     .caja-fabricantes{
@@ -195,7 +204,6 @@ main{
             background-image: url("../assets/images/contacto/form.webp");
             border: 2px solid #555;
             padding: 0 1rem;
-            // margin-top: $margin-vertical;
             width: $width-form;
             .caja-input{
                 display: flex;
@@ -205,11 +213,21 @@ main{
                 input{
                     width: $width-form;
                 }
+                input, textarea{
+                    &:focus{
+                        box-shadow: $box-shadow-dorado;
+                    }
+                }
             }
             .caja-motivo{
                 margin-bottom: $margin-vertical;
+                accent-color: #000;
                 label{
-                    display: inline;
+                    display: inline-block;
+                    width: 85%;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
             textarea{
@@ -221,6 +239,12 @@ main{
                 display: flex;
                 justify-content: center;
                 margin-bottom: 0.5rem;
+                input{
+                    &:active{
+                        background: $color-ver-modelo;
+                        border-radius: 4px;
+                    }
+                }
             }
         }
         iframe{
@@ -242,7 +266,11 @@ footer{
     .social-media{
         background: $color-social-media-background;
         border: 2px solid $color-social-media-borde;
-        border-radius: 48px
+        border-radius: 48px;
+        &:hover{
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: $box-shadow-dorado;
+        }
     }
     .logo{
         width: 60%;

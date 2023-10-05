@@ -1,6 +1,8 @@
 /*HEADER*/
 /* CATALOGO */
 /* FABRICANTES */
+/* CONTACTO Y FOOTER */
+/* offset-x | offset-y | blur-radius | spread-radius | color */
 /* FOOTER */
 @font-face {
   font-family: "KelveticaNobis", Arial;
@@ -49,11 +51,15 @@ main .h4-carousel {
   z-index: 50;
 }
 main .whatsapp-logo {
+  filter: brightness(0.9);
   position: fixed;
-  right: 1rem;
   bottom: 1rem;
+  right: 1rem;
   width: 5rem;
   z-index: 100;
+}
+main .whatsapp-logo:hover {
+  filter: brightness(1);
 }
 main h2 {
   text-align: center;
@@ -94,6 +100,9 @@ main .catalogo .catalogo-vehiculos .caja-interna h4 {
   padding: 0.5rem;
   margin-top: 0.3rem;
 }
+main .catalogo .catalogo-vehiculos .caja-interna h4:hover {
+  text-decoration: underline;
+}
 main .catalogo .catalogo-vehiculos .caja-interna h5 {
   display: inline;
   background-color: rgba(0, 0, 0, 0.4);
@@ -132,6 +141,9 @@ main .link-formulario {
 }
 main .link-formulario a {
   text-decoration: none;
+}
+main .link-formulario a:hover {
+  text-decoration: underline;
 }
 main .caja-fabricantes .fabricantes {
   border: 0.5rem solid #000;
@@ -196,11 +208,19 @@ main .contacto form .caja-input {
 main .contacto form .caja-input input {
   width: 70%;
 }
+main .contacto form .caja-input input:focus, main .contacto form .caja-input textarea:focus {
+  box-shadow: 0 0 0.75rem 0.25rem #fafa8a;
+}
 main .contacto form .caja-motivo {
   margin-bottom: 0.5rem;
+  accent-color: #000;
 }
 main .contacto form .caja-motivo label {
-  display: inline;
+  display: inline-block;
+  width: 85%;
+}
+main .contacto form .caja-motivo label:hover {
+  text-decoration: underline;
 }
 main .contacto form textarea {
   height: 10rem;
@@ -211,6 +231,10 @@ main .contacto form .caja-input-submit {
   display: flex;
   justify-content: center;
   margin-bottom: 0.5rem;
+}
+main .contacto form .caja-input-submit input:active {
+  background: #bbb;
+  border-radius: 4px;
 }
 main .contacto iframe {
   height: 60dvw;
@@ -231,6 +255,10 @@ footer .social-media {
   background: #fff;
   border: 2px solid #000;
   border-radius: 48px;
+}
+footer .social-media:hover {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0 0.75rem 0.25rem #fafa8a;
 }
 footer .logo {
   width: 60%;
@@ -254,6 +282,9 @@ footer .logo {
     border: 0;
     font-size: 1.5rem;
     padding: 0 1.5rem;
+  }
+  header .navbar-nav-personal li:hover {
+    text-decoration: underline;
   }
   main .significado img {
     width: 50%;
