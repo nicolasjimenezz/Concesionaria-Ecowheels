@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoWheels</title>
-    <link rel="shortcut icon" href="./assets/images/favicon2.png" type="image/x-icon">
+      <link rel="shortcut icon" href="./assets/images/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,18 +15,18 @@
               <!-- <a class="navbar-brand">@EcoWheels</a> -->
               <img src="assets/images/EcoWheels-logo.png" class="logo">
               <!-- <h4>Aquí pensamos en el futuro</h4> -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">  <!--Este Anchor era un Button-->
                 <span class="navbar-toggler-icon"></span>
-              </button>
+              </a>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header offcanvas-header-personal">
                   <h5 class="offcanvas-title offcanvas-title-personal" id="offcanvasNavbarLabel">Enlaces internos</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <a type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a> <!--Este Anchor era un Button-->
                 </div>
                 <div class="offcanvas-body offcanvas-body-personal">
                   <ul class="navbar-nav justify-content-end flex-grow-1 navbar-nav-personal"> <!--Eliminé clase "pe-3"-->
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#significado">¿Qué es un híbrido?</a>
+                      <a class="nav-link active" href="#significado">¿Qué es un híbrido?</a> <!--Eliminé  aria-current="page"-->
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" href="#vehiculos">Vehículos</a>
@@ -43,7 +43,6 @@
     <main>
         <!-- CAROUSEL INICIO -->
         <div>
-          <!-- <h4 class="h4-carousel">Traemos el futuro</h4> -->
           <div id="carouselExampleAutoplaying" class="carousel slide carousel-personal" data-bs-ride="carousel" data-bs-pause="false" data-bs-touch="false">
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7200">
@@ -53,20 +52,12 @@
                   <img src="./assets/images/carousel-start/carousel1.webp" class="d-block w-100" alt="Familia dentro de un auto">
                 </div>
                 <div class="carousel-item" data-bs-interval="8000">
-                  <img src="./assets/images/carousel-start/carousel2.webp" class="d-block w-100" alt="Cargando la bateria de un auto">
+                  <img src="./assets/images/carousel-start/carousel2.webp" class="d-block w-100" alt="Auto conectado cargándose">
                 </div>
                 <div class="carousel-item" data-bs-interval="8000">
-                  <img src="./assets/images/carousel-start/carousel3.webp" class="d-block w-100" alt="Cargando la bateria de un auto">
+                  <img src="./assets/images/carousel-start/carousel3.webp" class="d-block w-100" alt="Auto conectado cargándose 2">
                 </div>
               </div>
-              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button> -->
           </div>
         </div>
         <a href="https://whatsapp.com/" target=_blank><img class="whatsapp-logo" src="./assets/social-media/ws.png" alt="Logo de whatsapp"></a>
@@ -119,7 +110,6 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-
               <!-- VER MODELO/PROXIMAMENTE CHECKBOX -->
               <label class="ver-modelo-checkbox">
                 <input type="hidden" name="ver-modelo" value="False">
@@ -129,7 +119,6 @@
                   <span class="apagado">Proximamente</span>
                 </h4>
               </label>
-              <!-- FIN VER MODELO/PROXIMAMENTE CHECKBOX -->
             </div>
 
             <div class="caja-interna">
@@ -169,7 +158,6 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-
               <!-- VER MODELO/PROXIMAMENTE CHECKBOX -->
               <label class="ver-modelo-checkbox">
                 <input type="hidden" name="ver-modelo" value="False">
@@ -179,9 +167,8 @@
                   <span class="apagado">Proximamente</span>
                 </h4>
               </label>
-              <!-- FIN VER MODELO/PROXIMAMENTE CHECKBOX -->
             </div>
-
+            
             <div class="caja-interna">
               <h3>Pick Ups</h3>
               <div id="carouselExampleCaptions3" class="carousel slide carousel-vehiculo">
@@ -212,7 +199,6 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-
               <!-- VER MODELO/PROXIMAMENTE CHECKBOX -->
               <label class="ver-modelo-checkbox">
                 <input type="hidden" name="ver-modelo" value="False">
@@ -222,69 +208,62 @@
                   <span class="apagado">Proximamente</span>
                 </h4>
               </label>
-              <!-- FIN VER MODELO/PROXIMAMENTE CHECKBOX -->
             </div>
           </div>
 
           <h4 class="link-formulario">Ofrecemos Test Drives, rellene nuestro <a href="#contacto">#FORMULARIO DE CONTACTO</a> para solicitar uno</h4>
           <div class="caja-fabricantes">
-          <div class="fabricantes">
-            <div class="fabricantes-titulo">
-              <img src="./assets/images/fabricantes/mercosur.png" class="mercosur-logo">
-              <h4>FABRICANTES ASOCIADOS</h4>
-              <img src="./assets/images/fabricantes/bandera.webp" class="bandera">
+            <div class="fabricantes">
+              <div class="fabricantes-titulo">
+                <img src="./assets/images/fabricantes/mercosur.png" class="mercosur-logo">
+                <h4>FABRICANTES ASOCIADOS</h4>
+                <img src="./assets/images/fabricantes/bandera.webp" class="bandera">
+              </div>
+              <div class="fabricantes-logos">
+                <img src="assets/images/fabricantes/marcas-logos/bmw.png">
+                <img src="assets/images/fabricantes/marcas-logos/honda.png">
+                <img src="assets/images/fabricantes/marcas-logos/volvo.png">
+                <img src="assets/images/fabricantes/marcas-logos/toyota.png">
+                <img src="assets/images/fabricantes/marcas-logos/ford.png">
+              </div>
             </div>
-            <div class="fabricantes-logos">
-              <!-- <img src="assets/images/marcas-logos/bmw2.png"> -->
-              <img src="assets/images/marcas-logos/bmw3.png">
-              <!-- <img src="assets/images/marcas-logos/honda2.png"> -->
-              <img src="assets/images/marcas-logos/honda3.png">
-
-              <img src="assets/images/marcas-logos/volvo.png">
-              <img src="assets/images/marcas-logos/toyota.png">
-              <img src="assets/images/marcas-logos/ford.png">
-            </div>
-          </div>
           </div>
         </div>
-
         <div id="contacto" class="contacto">
-          <div class="formulario">
-            <h2>Contacto</h2>
-            <p>Puede contactarnos a través de Whatsapp o rellenando el siguiente formulario</p>
-            <form action="https://formspree.io/f/xwkdwwaq" method="POST">
-              <div class="caja-input">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Su nombre">
+          <h2>Contacto</h2>
+          <p>Puede contactarnos a través de Whatsapp o rellenando el siguiente formulario</p>
+          <form action="https://formspree.io/f/xwkdwwaq" method="POST">
+            <div class="caja-input">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Su nombre">
+            </div>
+            <div class="caja-input">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" placeholder="Su e-mail">
+            </div>
+            <div class="caja-motivo">
+              <h4>Motivo:</h4>
+              <div>
+                <input type="radio" id="testdrive" name="motivo" value="Test drive">
+                <label for="testdrive">Test Drive</label>
               </div>
-              <div class="caja-input">
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email" placeholder="Su e-mail">
+              <div>
+                <input type="radio" id="ventas" name="motivo" value="Métodos de pago/presupuestos">
+                <label for="ventas">Métodos de pago/presupuestos</label>
               </div>
-              <div class="caja-motivo">
-                <h4>Motivo:</h4>
-                <div>
-                  <input type="radio" id="testdrive" name="motivo" value="Test drive">
-                  <label for="testdrive">Test Drive</label>
-                </div>
-                <div>
-                  <input type="radio" id="ventas" name="motivo" value="Métodos de pago/presupuestos">
-                  <label for="ventas">Métodos de pago/presupuestos</label>
-                </div>
-                <div>
-                  <input type="radio" id="info" name="motivo" value="Información general/otros (especificar en el mensaje)">
-                  <label for="info">Otros (especificar en el mensaje)</label>
-                </div>
+              <div>
+                <input type="radio" id="info" name="motivo" value="Información general/otros (especificar en el mensaje)">
+                <label for="info">Otros (especificar en el mensaje)</label>
               </div>
-              <div class="caja-input">
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" placeholder="Su mensaje para nosotros"></textarea>
-              </div>
-              <div class="caja-input-submit">
-                <input type="submit">
-              </div>
-            </form>
-          </div>
+            </div>
+            <div class="caja-input">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" placeholder="Su mensaje para nosotros"></textarea>
+            </div>
+            <div class="caja-input-submit">
+              <input type="submit">
+            </div>
+          </form>
           <iframe class="maps-ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.4110520595686!2d-57.959960123870495!3d-34.92122661429739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e0efd6f3b%3A0x6999aecf2ae9c3a0!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1695665919919!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>

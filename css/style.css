@@ -181,9 +181,8 @@ main .caja-fabricantes .fabricantes .fabricantes-logos img {
   width: 15dvw;
 }
 main .contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
 }
 main .contacto p {
   text-align: center;
@@ -195,6 +194,8 @@ main .contacto .formulario {
 }
 main .contacto form {
   background-image: url("../assets/images/contacto/form.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 2px solid #555;
   padding: 0 1rem;
   width: 70%;
@@ -212,8 +213,9 @@ main .contacto form .caja-input input:focus, main .contacto form .caja-input tex
   box-shadow: 0 0 0.75rem 0.25rem #fafa8a;
 }
 main .contacto form .caja-motivo {
-  margin-bottom: 0.5rem;
   accent-color: #000;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
 }
 main .contacto form .caja-motivo label {
   display: inline-block;
@@ -221,6 +223,12 @@ main .contacto form .caja-motivo label {
 }
 main .contacto form .caja-motivo label:hover {
   text-decoration: underline;
+}
+main .contacto form .caja-motivo div {
+  display: flex;
+}
+main .contacto form .caja-motivo div label {
+  padding-left: 0.3rem;
 }
 main .contacto form textarea {
   height: 10rem;
@@ -237,8 +245,8 @@ main .contacto form .caja-input-submit input:active {
   border-radius: 4px;
 }
 main .contacto iframe {
-  height: 60dvw;
-  width: 60dvw;
+  height: 70dvw;
+  width: 70%;
   margin: 2dvh 15dvw;
 }
 
@@ -296,19 +304,29 @@ footer .logo {
     width: 80px;
   }
   main .contacto {
-    flex-direction: row;
-    margin-bottom: 1.5rem;
+    grid-template-areas: "titulo none" "parrafo none" "formulario mapa";
+    padding-bottom: 1.5rem;
   }
-  main .contacto .formulario {
-    margin: 0 auto;
+  main .contacto h2 {
+    grid-area: titulo;
+    margin-left: 10dvw;
   }
-  main .contacto .formulario p {
-    padding: 0 2rem;
+  main .contacto p {
+    grid-area: parrafo;
+    margin-left: 10dvw;
+  }
+  main .contacto form {
+    background-position: top;
+    background-size: cover;
+    grid-area: formulario;
+    margin-left: 10dvw;
+    width: 50%;
   }
   main .contacto iframe {
-    width: 30dvw;
-    height: 30dvw;
-    margin: auto;
+    grid-area: mapa;
+    height: 100%;
+    width: 60dvh;
+    margin: 0 10dvw 0 0;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -323,6 +341,5 @@ footer .logo {
     width: 15%;
   }
 }
-/*WHEN WIDTH IS BIGGER THAN HEIGHT*/
 
 /*# sourceMappingURL=style.css.map */

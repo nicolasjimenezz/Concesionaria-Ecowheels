@@ -12,10 +12,6 @@
     }
 }
 
-// @media only screen and (min-width: 600px) {
-
-// }
-
 @media only screen and (min-width:992px) {
     header{
         .navbar-nav-personal{
@@ -49,34 +45,37 @@
             }
         }
         .contacto{
-            flex-direction: row;
-            margin-bottom: $margin-vertical*3;
-            .formulario{
-                margin: 0 auto;
-                p{
-                    padding: 0 2rem;
-                }
+            grid-template-areas: 
+            "titulo none"
+            "parrafo none"
+            "formulario mapa";
+            padding-bottom: $margin-vertical*3;
+            h2{
+                grid-area: titulo;
+                margin-left: 10dvw;
+            }
+            p{
+                grid-area: parrafo;
+                margin-left: 10dvw;
+            }
+            form{
+                background-position: top;
+                background-size: cover;  
+                grid-area: formulario;
+                margin-left: 10dvw;
+                width: 50%;
             }
             iframe{
-                width: 30dvw;
-                height: 30dvw;
-                margin: auto;
+                grid-area: mapa;
+                height: 100%;
+                width: 60dvh;
+                margin: 0 10dvw 0 0;
             }
         }
     }
 }
 
 @media only screen and (min-width:1200px) {
-    // header{
-    //     nav{
-    //         height: 10dvh;
-    //         .carousel-item{
-    //             video, img{
-    //                 height: 90vh;
-    //             }
-    //         }
-    //     }
-    // }
     .catalogo{
         .caja-fabricantes{
             display: flex;
@@ -92,6 +91,3 @@
         }
     }
 }
-
-// @media only screen and (orientation: landscape){} 
-/*WHEN WIDTH IS BIGGER THAN HEIGHT*/

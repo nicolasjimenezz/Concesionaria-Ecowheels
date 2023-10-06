@@ -188,9 +188,8 @@ main{
         }
     }
     .contacto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        justify-items: center;
         p{
             text-align: center;
         }
@@ -198,10 +197,11 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-
         }
         form{
             background-image: url("../assets/images/contacto/form.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
             border: 2px solid #555;
             padding: 0 1rem;
             width: $width-form;
@@ -220,13 +220,20 @@ main{
                 }
             }
             .caja-motivo{
-                margin-bottom: $margin-vertical;
                 accent-color: #000;
+                margin-bottom: $margin-vertical;
+                padding-left: 1rem;
                 label{
                     display: inline-block;
                     width: 85%;
                     &:hover{
                         text-decoration: underline;
+                    }
+                }
+                div{
+                    display: flex;
+                    label{
+                        padding-left: 0.3rem;
                     }
                 }
             }
@@ -248,8 +255,8 @@ main{
             }
         }
         iframe{
-            height: 60dvw;
-            width: 60dvw;
+            height: 70dvw;
+            width: 70%;
             margin:2dvh 15dvw;
         }
     }
