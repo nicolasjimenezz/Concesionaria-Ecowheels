@@ -53,9 +53,9 @@ main .h4-carousel {
 main .whatsapp-logo {
   filter: brightness(0.9);
   position: fixed;
-  bottom: 1rem;
+  bottom: 3.5rem;
   right: 1rem;
-  width: 5rem;
+  width: 3rem;
   z-index: 100;
 }
 main .whatsapp-logo:hover {
@@ -278,8 +278,28 @@ footer .logo {
   }
 }
 @media only screen and (min-width: 480px) {
-  .h4-carousel {
-    font-size: 1.5rem;
+  main .whatsapp-logo {
+    width: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .whatsapp-logo {
+    bottom: 20dvh;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  footer .caja-logo {
+    margin-left: 10dvw;
+    width: 50%;
+  }
+  footer .caja-logo h4 {
+    font-size: 2dvw;
+  }
+  footer .caja-social-media {
+    margin: 0 10dvw 0 0;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -293,6 +313,11 @@ footer .logo {
   }
   header .navbar-nav-personal li:hover {
     text-decoration: underline;
+  }
+  main .whatsapp-logo {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 5rem;
   }
   main .significado img {
     width: 50%;
@@ -339,6 +364,22 @@ footer .logo {
   }
   .catalogo .caja-fabricantes .fabricantes .fabricantes-logos img {
     width: 15%;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  footer .caja-logo {
+    margin-left: 13dvw;
+  }
+  footer .caja-social-media {
+    margin-right: 6dvw;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  footer .caja-logo {
+    margin-left: 8dvw;
+  }
+  footer .caja-social-media {
+    margin-right: 13dvw;
   }
 }
 

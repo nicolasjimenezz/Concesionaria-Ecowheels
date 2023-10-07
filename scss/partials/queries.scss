@@ -6,9 +6,35 @@
     }
 }
 
+
 @media only screen and (min-width: 480px) {
-    .h4-carousel{
-        font-size: 1.5rem;
+    main{
+        .whatsapp-logo{
+            width: 4rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    main{
+        .whatsapp-logo{
+            bottom: 20dvh;
+        }
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        .caja-logo{
+            margin-left: 10dvw;
+            width: 50%;
+            h4{
+                font-size: 2dvw;
+            }
+        }
+        .caja-social-media{
+            margin: 0 10dvw 0 0;
+        }
     }
 }
 
@@ -27,6 +53,11 @@
         }
     }
     main{
+        .whatsapp-logo{
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 5rem;
+        }
         .significado{
             img{
                 width: 50%;
@@ -88,6 +119,28 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    footer{
+        .caja-logo{
+            margin-left: 13dvw;
+        }
+        .caja-social-media{
+            margin-right: 6dvw;
+        }
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    footer{
+        .caja-logo{
+            margin-left: 8dvw;
+        }
+        .caja-social-media{
+            margin-right: 13dvw;
         }
     }
 }
