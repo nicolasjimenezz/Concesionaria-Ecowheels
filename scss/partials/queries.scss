@@ -18,22 +18,25 @@
 @media only screen and (min-width: 768px) {
     main{
         .whatsapp-logo{
-            bottom: 20dvh;
+            bottom: 1.5rem;
         }
     }
     footer{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        .caja-logo{
-            margin-left: 10dvw;
-            width: 50%;
+        grid-template-columns: 2fr 3fr 1fr 3fr 2fr;
+        grid-template-areas: 
+        ". d . sm ";
+        .caja-direccion{
+            grid-area: d;
+            margin: 0;
             h4{
-                font-size: 2dvw;
+                font-size: 1rem;
             }
         }
         .caja-social-media{
-            margin: 0 10dvw 0 0;
+            grid-area: sm;
+            margin: 0;
+            width: 120%;
         }
     }
 }
@@ -76,32 +79,45 @@
             }
         }
         .contacto{
-            grid-template-areas: 
-            "titulo none"
-            "parrafo none"
-            "formulario mapa";
+            grid-template-columns: 2fr 3fr 1fr 3fr 2fr;
+            grid-template-areas:
+            ". titulo . . ."
+            ". parrafo . . ."
+            ". formulario . mapa .";
             padding-bottom: $margin-vertical*3;
             h2{
                 grid-area: titulo;
-                margin-left: 10dvw;
             }
             p{
                 grid-area: parrafo;
-                margin-left: 10dvw;
+                margin: 0;
             }
             form{
                 background-position: top;
                 background-size: cover;  
                 grid-area: formulario;
-                margin-left: 10dvw;
-                width: 50%;
+                width: 100%;
             }
             iframe{
                 grid-area: mapa;
+                margin: 0;
                 height: 100%;
-                width: 60dvh;
-                margin: 0 10dvw 0 0;
+                width: 100%;
             }
+        }
+    }
+    footer{
+        .caja-direccion{
+            grid-area: d;
+            margin: 0;
+            h4{
+                font-size: 1.5rem;
+            }
+        }
+        .caja-social-media{
+            grid-area: sm;
+            margin: 0;
+            width: 100%;
         }
     }
 }
@@ -119,28 +135,6 @@
                     }
                 }
             }
-        }
-    }
-}
-
-@media only screen and (min-width:1366px) {
-    footer{
-        .caja-direccion{
-            margin-left: 13dvw;
-        }
-        .caja-social-media{
-            margin-right: 6dvw;
-        }
-    }
-}
-
-@media only screen and (min-width:1920px) {
-    footer{
-        .caja-direccion{
-            margin-left: 8dvw;
-        }
-        .caja-social-media{
-            margin-right: 13dvw;
         }
     }
 }

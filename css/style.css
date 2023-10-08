@@ -299,22 +299,24 @@ footer .logo {
 }
 @media only screen and (min-width: 768px) {
   main .whatsapp-logo {
-    bottom: 20dvh;
+    bottom: 1.5rem;
   }
   footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: 2fr 3fr 1fr 3fr 2fr;
+    grid-template-areas: ". d . sm ";
   }
-  footer .caja-logo {
-    margin-left: 10dvw;
-    width: 50%;
+  footer .caja-direccion {
+    grid-area: d;
+    margin: 0;
   }
-  footer .caja-logo h4 {
-    font-size: 2dvw;
+  footer .caja-direccion h4 {
+    font-size: 1rem;
   }
   footer .caja-social-media {
-    margin: 0 10dvw 0 0;
+    grid-area: sm;
+    margin: 0;
+    width: 120%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -344,29 +346,40 @@ footer .logo {
     width: 80px;
   }
   main .contacto {
-    grid-template-areas: "titulo none" "parrafo none" "formulario mapa";
+    grid-template-columns: 2fr 3fr 1fr 3fr 2fr;
+    grid-template-areas: ". titulo . . ." ". parrafo . . ." ". formulario . mapa .";
     padding-bottom: 1.5rem;
   }
   main .contacto h2 {
     grid-area: titulo;
-    margin-left: 10dvw;
   }
   main .contacto p {
     grid-area: parrafo;
-    margin-left: 10dvw;
+    margin: 0;
   }
   main .contacto form {
     background-position: top;
     background-size: cover;
     grid-area: formulario;
-    margin-left: 10dvw;
-    width: 50%;
+    width: 100%;
   }
   main .contacto iframe {
     grid-area: mapa;
+    margin: 0;
     height: 100%;
-    width: 60dvh;
-    margin: 0 10dvw 0 0;
+    width: 100%;
+  }
+  footer .caja-direccion {
+    grid-area: d;
+    margin: 0;
+  }
+  footer .caja-direccion h4 {
+    font-size: 1.5rem;
+  }
+  footer .caja-social-media {
+    grid-area: sm;
+    margin: 0;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -379,22 +392,6 @@ footer .logo {
   }
   .catalogo .caja-fabricantes .fabricantes .fabricantes-logos img {
     width: 15%;
-  }
-}
-@media only screen and (min-width: 1366px) {
-  footer .caja-direccion {
-    margin-left: 13dvw;
-  }
-  footer .caja-social-media {
-    margin-right: 6dvw;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  footer .caja-direccion {
-    margin-left: 8dvw;
-  }
-  footer .caja-social-media {
-    margin-right: 13dvw;
   }
 }
 
