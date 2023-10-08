@@ -5,6 +5,8 @@
     src: url("../fonts/KelveticaNobis-A5z6.ttf");
     font-family: "Helvetica", Arial;
     src: url("../fonts/Helvetica.ttf");
+    font-family: "rolleston-display-regular", Arial;
+    src: url("../fonts/rolleston-display-regular.otf")
 }
 
 $margin-vertical:0.5rem;
@@ -22,8 +24,19 @@ body{
 }
 
 header{
-    .logo{
-        width: 25dvw;
+    .caja-logo{
+        display: flex;
+        align-items: center;
+        .logo{
+            height: 7dvh;
+        }
+        h1{
+            color: $color-fuente-logo;
+            display: inline-block;
+            font-family: "rolleston-display-regular";
+            height: 5dvh;
+            margin-top: 1dvh;
+        }
     }
     .offcanvas-header-personal{
         border-bottom: 3px solid $color-ver-modelo;
@@ -130,6 +143,8 @@ main{
                 /* FIN VER MODELO/PROXIMAMENTE CHECKBOX */
             }
             .carousel-vehiculo{
+                border: 2px solid $color-caja-vehiculo;
+                border-radius: 4px;
                 width: 80%;
             }
             .carousel-control-prev, .carousel-control-next{

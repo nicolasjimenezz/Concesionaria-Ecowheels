@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vendemos el vehículo híbrido que buscás. Autos, SUVs, pick-ups 0km. Tenemos modelos importados de BMW, Honda, Volvo, Toyota, Ford. Ofrecemos una amplia gama de vehículos con el objetivo de que la mayor cantidad de gente posible logre formar parte del futuro de los automóviles">
+    <meta name="keywords" content="EcoWheels, vehiculos, vehiculos híbridos, autos híbridos, suvs híbridas, pick ups híbridas, camionetas híbridas, concesionaria, concesionaria de híbridos, BMW, Honda, Volvo, Toyota, Ford.">
+    <!-- Social: facebook / Open graph -->
+    <meta property="og:title" content="EcoWheels - vehículos híbridos" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Concesionaria de vehículos híbridos" />
+    <meta property="og:url" content="https://nicolasjimenezz.github.io/concesionaria/" />
+    <meta property="og:image" content="https://imgur.com/a/HKF12wh" />
+    <!-- Social: twitter-->
+    <meta name="twitter:title" content="Formosa, tierra hermosa">
+    <meta name="twitter:description" content="Concesionaria de vehículos híbridos">
+    <meta name="twitter:image" content="https://imgur.com/a/HKF12wh">
+    <meta name="twitter:card" content="summary_large_image">
+
     <title>EcoWheels</title>
       <link rel="shortcut icon" href="./assets/images/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -12,9 +26,10 @@
     <header>
         <nav class="navbar navbar-expand-lg" id="navbar"> <!--Borré clase "bg-body-tertiary" para quitarle el color-->
             <div class="container-fluid">
-              <!-- <a class="navbar-brand">@EcoWheels</a> -->
-              <img src="assets/images/EcoWheels-logo.png" class="logo">
-              <!-- <h4>Aquí pensamos en el futuro</h4> -->
+              <div class="caja-logo">
+                <img src="assets/images/favicon3.png" class="logo" alt="logo EcoWheels">
+                <h1>EcoWheels</h1>
+              </div>
               <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">  <!--Este Anchor era un Button-->
                 <span class="navbar-toggler-icon"></span>
               </a>
@@ -46,7 +61,7 @@
           <div id="carouselExampleAutoplaying" class="carousel slide carousel-personal" data-bs-ride="carousel" data-bs-pause="false" data-bs-touch="false">
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7200">
-                  <video src="./assets/images/carousel-start/bmw-charging-cut-mute.mp4" class="d-block w-100" alt="BMW híbrido siendo cargado" autoplay muted loop>
+                    <video src="./assets/images/carousel-start/bmw-charging-cut-mute.mp4" class="d-block w-100" alt="BMW híbrido siendo conectado para cargarse" autoplay muted loop>
                 </div>
                 <div class="carousel-item" data-bs-interval="8800">
                   <img src="./assets/images/carousel-start/carousel1.webp" class="d-block w-100" alt="Familia dentro de un auto">
@@ -65,7 +80,7 @@
         <div class="significado">
           <h2 id="significado">¿Qué es un híbrido?</h2>
           <p>Es un vehículo con 2 motores, uno de combustión interna y otro eléctrico, esto le permite alternar su fuente de energía y moverse con menos cantidades de energía y un impacto ambiental reducido comparado a sus antepasados.</p>
-          <img src="./assets/images/significado/auto-hibrido.webp">
+          <img src="./assets/images/significado/auto-hibrido.webp" alt="auto híbrido partes">
         </div>
         <!-- CATALOGO -->
         <div id="vehiculos" class="catalogo">
@@ -220,11 +235,11 @@
                 <img src="./assets/images/fabricantes/bandera.webp" class="bandera">
               </div>
               <div class="fabricantes-logos">
-                <img src="assets/images/fabricantes/marcas-logos/bmw.png">
-                <img src="assets/images/fabricantes/marcas-logos/honda.png">
-                <img src="assets/images/fabricantes/marcas-logos/volvo.png">
-                <img src="assets/images/fabricantes/marcas-logos/toyota.png">
-                <img src="assets/images/fabricantes/marcas-logos/ford.png">
+                <img src="assets/images/fabricantes/marcas-logos/bmw.png" alt="logo BMW">
+                <img src="assets/images/fabricantes/marcas-logos/honda.png" alt="logo Honda">
+                <img src="assets/images/fabricantes/marcas-logos/volvo.png" alt="logo Volvo">
+                <img src="assets/images/fabricantes/marcas-logos/toyota.png" alt="logo Toyota">
+                <img src="assets/images/fabricantes/marcas-logos/ford.png" alt="logo Ford">
               </div>
             </div>
           </div>
@@ -268,15 +283,16 @@
         </div>
     </main>
     <footer>
-        <div class="caja-logo">
+        <div class="caja-direccion">
           <h4>Calle Falsa 123, Springfield</h4>
-          <img src="assets/images/EcoWheels-logo.png" class="logo">
+          <h4>Eco Wheels - Nicolás Jiménez</h4>
+          <img src="assets/images/EcoWheels-logo.png" class="logo" alt="Logo EcoWheels">
         </div>
         <div class="caja-social-media">
-          <a href="https://facebook.com" target=_blank><img class="social-media fb" src="./assets/social-media/fb.png" alt="Imagen link facebook"></a>
-          <a href="https://instagram.com" target=_blank><img class="social-media ig" src="./assets/social-media/ig.png" alt="Imagen link instagram"></a>
-          <a href="https://twitter.com" target=_blank><img class="social-media tw" src="./assets/social-media/tw.png" alt="Imagen link twitter"></a>
-          <a href="https://tiktok.com" target=_blank><img class="social-media tk" src="./assets/social-media/tk.png" alt="Imagen link tiktok"></a>
+          <a href="https://facebook.com" target=_blank><img class="social-media fb" src="./assets/social-media/fb.png" alt="link facebook"></a>
+          <a href="https://instagram.com" target=_blank><img class="social-media ig" src="./assets/social-media/ig.png" alt="link instagram"></a>
+          <a href="https://twitter.com" target=_blank><img class="social-media tw" src="./assets/social-media/tw.png" alt="link twitter"></a>
+          <a href="https://tiktok.com" target=_blank><img class="social-media tk" src="./assets/social-media/tk.png" alt="link tiktok"></a>
         </div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>

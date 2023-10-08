@@ -9,6 +9,8 @@
   src: url("../fonts/KelveticaNobis-A5z6.ttf");
   font-family: "Helvetica", Arial;
   src: url("../fonts/Helvetica.ttf");
+  font-family: "rolleston-display-regular", Arial;
+  src: url("../fonts/rolleston-display-regular.otf");
 }
 * {
   font-family: "Helvetica";
@@ -21,8 +23,19 @@ body {
   overflow-x: hidden;
 }
 
-header .logo {
-  width: 25dvw;
+header .caja-logo {
+  display: flex;
+  align-items: center;
+}
+header .caja-logo .logo {
+  height: 7dvh;
+}
+header .caja-logo h1 {
+  color: rgb(155, 192, 55);
+  display: inline-block;
+  font-family: "rolleston-display-regular";
+  height: 5dvh;
+  margin-top: 1dvh;
 }
 header .offcanvas-header-personal {
   border-bottom: 3px solid #bbb;
@@ -129,6 +142,8 @@ main .catalogo .catalogo-vehiculos .caja-interna .ver-modelo-checkbox-input:chec
   display: inline;
 }
 main .catalogo .catalogo-vehiculos .carousel-vehiculo {
+  border: 2px solid #777;
+  border-radius: 4px;
   width: 80%;
 }
 main .catalogo .catalogo-vehiculos .carousel-control-prev, main .catalogo .catalogo-vehiculos .carousel-control-next {
@@ -367,7 +382,7 @@ footer .logo {
   }
 }
 @media only screen and (min-width: 1366px) {
-  footer .caja-logo {
+  footer .caja-direccion {
     margin-left: 13dvw;
   }
   footer .caja-social-media {
@@ -375,7 +390,7 @@ footer .logo {
   }
 }
 @media only screen and (min-width: 1920px) {
-  footer .caja-logo {
+  footer .caja-direccion {
     margin-left: 8dvw;
   }
   footer .caja-social-media {
